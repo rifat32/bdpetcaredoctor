@@ -15,6 +15,7 @@
 		"@types/react-router-dom": "^5.3.1",
 		"axios": "^0.22.0",
 		"jodit": "^3.14.3",
+		"jodit-react": "^1.2.6",
 		"jodit-react-ts": "^0.9.0",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",

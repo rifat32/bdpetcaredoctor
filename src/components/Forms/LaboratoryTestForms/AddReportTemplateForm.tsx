@@ -18,6 +18,7 @@ interface FormData {
 
 const AddReportTemplateForm: React.FC<UpdateFormInterface> = (props) => {
 	const [template, setTemplate] = useState<string>();
+	const [toggleTemplate, setToggleTemplate] = useState<boolean>(true);
 	const [formData, setFormData] = useState<FormData>({
 	name: "",
 	template:"",
@@ -26,12 +27,15 @@ const AddReportTemplateForm: React.FC<UpdateFormInterface> = (props) => {
 	
 	const [errors, setErrors] = useState<any>(null);
 
-	useEffect(() => {
-		
-	}, []);
+
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		setToggleTemplate(false)
 		setFormData({ ...formData, [e.target.name]: e.target.value });
+		setTemplate(" ")
+		setToggleTemplate(true)
+	
+		
 	};
 	const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -45,6 +49,7 @@ const AddReportTemplateForm: React.FC<UpdateFormInterface> = (props) => {
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
 		setErrors(null);
+		
 		if (props.type === "update") {
 			updateData();
 		} else {
@@ -78,6 +83,7 @@ const AddReportTemplateForm: React.FC<UpdateFormInterface> = (props) => {
 	useEffect(() => {
 		if (props.type == "update") {
 			setFormData(props.value);
+			 setTemplate(props.value.template)
 			console.log(props.value)
 		}
 	}, []);
@@ -139,7 +145,10 @@ const AddReportTemplateForm: React.FC<UpdateFormInterface> = (props) => {
 				<label htmlFor="template" className="form-label">
 					 Template
 				</label>
-				<JoditReact onChange={(content) => setTemplate(content)} defaultValue={formData.template} />
+				{
+					toggleTemplate && <JoditReact onChange={(content) => setTemplate(content)} defaultValue={template} />
+				}
+				{/* <JoditReact onChange={(content) => setTemplate(content)} defaultValue={formData.template} /> */}
 				<input
 					type="hidden"
 					className={
