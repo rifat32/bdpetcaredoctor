@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
 			</div>
 			<div className="d-flex justify-content-center align-items-center mt-5" style={{height:"70vh",fontWeight:"bold" }}>
 
-				<h1 className="text-capitalize">
+				<h1 className="text-capitalize" style={{fontSize:"3rem"}}>
 				appointment management system
 				</h1>
 
