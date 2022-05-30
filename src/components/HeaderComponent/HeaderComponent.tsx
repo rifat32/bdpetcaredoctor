@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { APPNAME } from "../../config";
 import { AppContext } from "../../context";
 const HeaderComponent: React.FC = () => {
 	const toggleSidebar = () => {
@@ -15,7 +16,7 @@ const HeaderComponent: React.FC = () => {
 				<div className="d-flex align-items-center justify-content-between">
 					<Link to="/admin" className="logo d-flex align-items-center">
 						<img src="/assets/img/logo.png" alt="logo" />
-						<span className="d-none d-lg-block">Coder ment</span>
+						<span className="d-none d-lg-block">{APPNAME}</span>
 					</Link>
 					<i
 						className="bi bi-list toggle-sidebar-btn"

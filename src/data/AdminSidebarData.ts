@@ -103,23 +103,23 @@ export const adminSideBarData: NavInterface[] = [
 		
 		],
 	},
-	{
-		name: "Laboratory Tests",
-		list: [
-			{
-				name: "Add Sample",
-				link: ROUTE_LIST.createReportTemplate,
-				permissions: [],
-			},
-			{
-				name: "List Sample",
-				link: ROUTE_LIST.listReportTemplate,
-				permissions: [],
-			},
+	// {
+	// 	name: "Laboratory Tests",
+	// 	list: [
+	// 		{
+	// 			name: "Add Sample",
+	// 			link: ROUTE_LIST.createReportTemplate,
+	// 			permissions: [],
+	// 		},
+	// 		{
+	// 			name: "List Sample",
+	// 			link: ROUTE_LIST.listReportTemplate,
+	// 			permissions: [],
+	// 		},
 
 		
-		],
-	},
+	// 	],
+	// },
 	{
 		name: "Product",
 		list: [
@@ -268,39 +268,39 @@ export const adminSideBarData: NavInterface[] = [
 			},
 		],
 	},
-	{
-		name: "Balance",
-		list: [
-			{
-				name: "Bank Balance",
-				link: "/admin/bank/balance",
-				permissions: [],
-			},
-			// {
-			// 	name: "Balance Transfer",
-			// 	link: "/admin/bank/transfer",
-			// 	permissions: ["transfer fund"],
-			// },
-			// {
-			// 	name: "Balance Transfer History",
-			// 	link: "/admin/bank/transfer/history",
-			// 	permissions: [],
-			// },
-		],
-	},
-	{
-		name: "Double Entry",
-		list: [
-			{
-				name: "Create Account",
-				link: "/admin/chart-of-account/create",
-				permissions: [],
-			},
-			{
-				name: "Chart of Accounts",
-				link: "/admin/chart-of-account/list",
-				permissions: [],
-			},
-		],
-	},
+	// {
+	// 	name: "Balance",
+	// 	list: [
+	// 		{
+	// 			name: "Bank Balance",
+	// 			link: "/admin/bank/balance",
+	// 			permissions: [],
+	// 		},
+	// 		// {
+	// 		// 	name: "Balance Transfer",
+	// 		// 	link: "/admin/bank/transfer",
+	// 		// 	permissions: ["transfer fund"],
+	// 		// },
+	// 		// {
+	// 		// 	name: "Balance Transfer History",
+	// 		// 	link: "/admin/bank/transfer/history",
+	// 		// 	permissions: [],
+	// 		// },
+	// 	],
+	// },
+	// {
+	// 	name: "Double Entry",
+	// 	list: [
+	// 		{
+	// 			name: "Create Account",
+	// 			link: "/admin/chart-of-account/create",
+	// 			permissions: [],
+	// 		},
+	// 		{
+	// 			name: "Chart of Accounts",
+	// 			link: "/admin/chart-of-account/list",
+	// 			permissions: [],
+	// 		},
+	// 	],
+	// },
 ];
