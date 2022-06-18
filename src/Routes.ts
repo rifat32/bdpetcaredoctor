@@ -51,6 +51,7 @@ import AddAppointmentPage from "./pages/AdminPages/Appointment/AddAppointmentPag
 import ListAppointmentPage from "./pages/AdminPages/Appointment/ListAppointmentPage";
 import AddReportTemplatePage from "./pages/AdminPages/LaboratoryReports/AddReportTemplatePage";
 import ListReportTemplatePage from "./pages/AdminPages/LaboratoryReports/ListReportTemplatePage";
+import ListServicePage from "./pages/AdminPages/Report/ListServicesPage";
 
 export const RouteData: RouteInterface[] = [
 	{
@@ -69,15 +70,27 @@ export const RouteData: RouteInterface[] = [
 		component: RegisterPage,
 	},
 	{
-		path: "/register",
-		exact: false,
-		component: RegisterPage,
-	},
-	{
 		path: "/admin",
 		exact: true,
 		component: Admin,
 	},
+
+
+	{
+		path: ROUTE_LIST.servicesReport,
+		exact: true,
+		component: ListServicePage,
+	},
+
+
+
+
+
+
+
+
+
+
 
 	// wings
 	{

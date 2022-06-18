@@ -47,6 +47,14 @@ const SideBarComponent = () => {
 		<>
 			<aside id="sidebar" className="sidebar">
 				<ul className="sidebar-nav" id="sidebar-nav">
+				<li  className="nav-item">
+				<Link to={"/admin"} 		className="nav-link ">
+
+														<i className="bi bi-home" />
+														<span>Dashboard</span>
+													</Link>
+								
+								</li>
 					{sideBar.length &&
 						sideBar.map((nav, navIndex) => {
 							return nav.vlist?.length ? (
