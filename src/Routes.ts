@@ -52,6 +52,7 @@ import ListAppointmentPage from "./pages/AdminPages/Appointment/ListAppointmentP
 import AddReportTemplatePage from "./pages/AdminPages/LaboratoryReports/AddReportTemplatePage";
 import ListReportTemplatePage from "./pages/AdminPages/LaboratoryReports/ListReportTemplatePage";
 import ListServicePage from "./pages/AdminPages/Report/ListServicesPage";
+import AccountSettingPage from "./pages/AdminPages/Profile/AccountSettingPage";
 
 export const RouteData: RouteInterface[] = [
 	{
@@ -81,6 +82,12 @@ export const RouteData: RouteInterface[] = [
 		exact: true,
 		component: ListServicePage,
 	},
+	{
+		path: ROUTE_LIST.accountSetting,
+		exact: true,
+		component: AccountSettingPage,
+	},
+	
 
 
 

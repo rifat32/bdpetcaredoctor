@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { APPNAME } from "../../config";
 import { AppContext } from "../../context";
+import { ROUTE_LIST } from "../../RoutConstants";
 const HeaderComponent: React.FC = () => {
 	const toggleSidebar = () => {
 		document.body.classList.toggle("toggle-sidebar");
@@ -253,12 +254,13 @@ const HeaderComponent: React.FC = () => {
 									<hr className="dropdown-divider" />
 								</li>
 								<li>
-									<a
+									<Link
+									to={ROUTE_LIST.accountSetting}
 										className="dropdown-item d-flex align-items-center"
 										href="users-profile.html">
 										<i className="bi bi-gear" />
 										<span>Account Settings</span>
-									</a>
+									</Link>
 								</li>
 								<li>
 									<hr className="dropdown-divider" />
